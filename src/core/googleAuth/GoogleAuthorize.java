@@ -1,12 +1,12 @@
 package core.googleAuth;
 
-import entities.concretes.User;
+
 
 public  class GoogleAuthorize {
 
-   public static void Authentication(User user){
+   public static void Authentication(String mail){
 
-      System.out.println("Google Hesabı ile Kayıt Yapıldı "+user.getEmail());
+      System.out.println("Google Hesabı ile Kayıt Yapıldı "+mail);
 
    }
 

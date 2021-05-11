@@ -46,7 +46,7 @@ public class UserManager implements UserService {
     @Override
     public void googleSignIn(User user) {
         System.out.println("Google Hesabı ile Oturum Aç ");
-        GoogleAuthorize.Authentication(user);
+        GoogleAuthorize.Authentication(user.getEmail());
         this.userDao.add(user);
       CheckMailValidator.verificationCheck(user.getEmail());
     }
