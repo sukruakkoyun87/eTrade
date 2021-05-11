@@ -1,7 +1,5 @@
 package core.Mail;
 
-
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

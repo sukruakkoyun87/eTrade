@@ -11,6 +11,7 @@ public class CheckMailValidator {
     private static void checkMailValid(String mail){
        System.out.println("Doğrulamak istediğiniz e-posta adresinize gidin ");
     }
+
     private static void verificationLink(){
         System.out.println("Kayıt işlemini tamamlamak için bu bağlantıya tıklayın");
     }

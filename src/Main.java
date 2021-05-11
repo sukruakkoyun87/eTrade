@@ -16,5 +16,11 @@ public class Main {
         System.out.println("------------------- Google Sevisi ile Kayıt --------------------------");
        manager.googleSignIn(user1);
 
+        System.out.println("------------------- Kullanıcı Listesi --------------------------");
+
+        for (User user2 : manager.getAll()) {
+            System.out.println(user2.getFirstName()+" "+user2.getLastName());
+        }
+
     }
 }
