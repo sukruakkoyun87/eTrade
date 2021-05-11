@@ -25,9 +25,7 @@ public class UserManager implements UserService {
             if (user.getPassword().length()>=6){
                 MailValidator.emailValidation(user.getEmail());
                 this.userDao.add(user);
-                CheckMailValidator.checkMailValid(user.getEmail());
-                CheckMailValidator.verificationLink();
-                CheckMailValidator.verificationOk(user.getEmail());
+                CheckMailValidator.verificationCheck(user.getEmail());
 
             }else{
                 System.out.println("Şifre 6 karakter olmalıdır");
@@ -49,9 +47,7 @@ public class UserManager implements UserService {
     public void googleSignIn(User user) {
         System.out.println("Google Hesabı ile Oturum Aç ");
         GoogleAuthorize.Authentication(user);
-        CheckMailValidator.checkMailValid(user.getEmail());
-        CheckMailValidator.verificationLink();
-        CheckMailValidator.verificationOk(user.getEmail());
+      CheckMailValidator.verificationCheck(user.getEmail());
     }
 
     @Override
